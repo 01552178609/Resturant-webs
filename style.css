@@ -1,0 +1,94 @@
+/* التنسيقات العامة */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #FF6347;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+/* قسم الترحيب */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9ZLiTr49gOIsyHp_50kbsd5T0-2CIWeEvg&s');
+    /* صورة بيتزا */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* قسم منيو الطعام */
+#menu-section {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-container {
+    margin: 20px;
+}
+
+/* تصميم رسالة التنبيه */
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+/* قسم مراجعة الطلب */
+#review-section {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.order-summary {
+    margin-bottom: 20px;
+}
